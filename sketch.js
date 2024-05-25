@@ -17,11 +17,11 @@ function preload()
     getBackgroundImg()
 }
 
-function setup(){
+function setup()
+{
     var canvas = createCanvas(1200,700);
     engine = Engine.create();
     world = engine.world;
-
 }
 
 function draw(){
@@ -91,11 +91,9 @@ async function getBackgroundImg()
         bg="sunrise6.png"
     }else if(hour>=16&&hour<18){
         bg="sunset7.png"
-    }else if(hour>=18&&hour<20){
-        
-        bg="sunset8.png"
-     
-    }else if(hour>=20&&hour<22){
+    }else if(hour>=18&&hour<20){   
+        bg="sunset8.png"}
+    else if(hour>=20&&hour<22){
         bg="sunset11.png"
     }else if(hour>=22&&hour<=24){
         bg="sunset12.png"
